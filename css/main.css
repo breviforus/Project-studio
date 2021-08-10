@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url("/fonts/GothamPro.ttf");
+  src: url("/fonts/GothamPro.eot");
+  src: url("/fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamPro.woff2") format("woff2"), url("/fonts/GothamPro.woff") format("woff"), url("/fonts/GothamPro.svg#GothamPro") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-0491;
+}
+
+@font-face {
+  font-family: 'GothamBold';
+  src: url("/fonts/GothamPro-Bold.ttf");
+  src: url("/fonts/GothamPro-Bold.eot");
+  src: url("/fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamPro-Bold.woff2") format("woff2"), url("/fonts/GothamPro-Bold.woff") format("woff"), url("/fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-0491;
+}
+/*# sourceMappingURL=main.css.map */

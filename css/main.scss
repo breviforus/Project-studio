@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/GothamPro.ttf');
+    src: url('/fonts/GothamPro.eot');
+    src: url('/fonts/GothamPro.eot?#iefix') format('embedded-opentype'), url('/fonts/GothamPro.woff2') format('woff2'), url('/fonts/GothamPro.woff') format('woff'), url('/fonts/GothamPro.svg#GothamPro') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0491;
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('/fonts/GothamPro-Bold.ttf');
+    src: url('/fonts/GothamPro-Bold.eot');
+    src: url('/fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/GothamPro-Bold.woff2') format('woff2'), url('/fonts/GothamPro-Bold.woff') format('woff'), url('/fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0491;
+}
+
+$red: #ed1c24;
+$darkred: #ef1920;
+$black: #000;
+$white: #fff;
+$light-grey2: #f2f2f2;
+$light-grey7: #f7f7f7;
+$grey-e: #cecece;
+$grey-d: #dfdfe6;
+$grey9: #999999;
+$dark: #222222;
+$full: "(max-width: 1920px)";
+$note: "(max-width: 1480px)";
+$tablet: "(max-width: 1199px)";
+$btablet: "(max-width: 991px)";
+$smtablet: "(max-width: 800px)";
+$mobile: "(max-width: 600px)";
+$smobile: "(max-width: 480px)";
+%flex-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex-elements-c {
+    display: flex;
+    align-items: center;
+}
+
+%flex-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+%li-before {
+    content: '';
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: $red;
+    width: 40px;
+    height: 2px;
+    @media #{$tablet} {
+        width: 30px;
+    }
+    @media #{$mobile} {
+        width: 20px;
+        margin-right: 10px;
+    }
+}
+
+%animateslow {
+    transition: .3s;
+}
+
+%redbutton {
+    background: $red;
+    padding: 22px 40px;
+    @extend %animateslow;
+    &:hover {
+        background: $white;
+        color: $red;
+    }
+    @media #{$note} {
+        padding: 20px 32px;
+    }
+    @media #{$mobile} {
+        padding: 14px 28px;
+    }
+}
+
+%cursor {
+    cursor: pointer;
+    @media #{$tablet} {
+        cursor: none;
+    }
+}
